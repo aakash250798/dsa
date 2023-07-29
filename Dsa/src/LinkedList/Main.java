@@ -17,6 +17,7 @@ class Node{
 }
 public class Main {
 	public static void main(String[] args) {
+		
 		Node n1=new Node(5);
 		Node n2=new Node(10);
 		Node n3=new Node(15);
