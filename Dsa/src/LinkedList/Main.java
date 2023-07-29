@@ -13,7 +13,7 @@ class Node{
 			System.out.println(temp.data);
 			temp=temp.next;
 		}
-	}
+	}//done
 	public static void insertAtBegin(int data) {
 		Node newNode=new Node(data);
 		if(head==null) {
