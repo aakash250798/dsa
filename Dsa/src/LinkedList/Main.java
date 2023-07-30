@@ -8,6 +8,7 @@ class Node{
 		this.data=data;
 	}
 	public static void traverse() {
+		System.out.println("Traversing.....");
 		Node temp=head;
 		while(temp!=null) {
 			System.out.println(temp.data);
@@ -37,6 +38,18 @@ class Node{
 		}
 		temp.next=newNode;
 	}
+	public static void deleteAtPos(int i) {
+		if(i==0) {
+			head=head.next;
+			return ;
+		}
+		Node temp=head;
+		while(--i>0) {
+			temp=temp.next;
+			
+		}
+		temp.next=temp.next.next;
+	}
 }
 public class Main {
 	public static void main(String[] args) {
@@ -44,6 +57,8 @@ public class Main {
 		Node.insertAtEnd(5);
 		Node.insertAtEnd(20);
 		Node.traverse(); 
+		Node.deleteAtPos(2);
+		Node.traverse();
 	}
 
 }
