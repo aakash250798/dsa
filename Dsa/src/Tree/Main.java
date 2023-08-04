@@ -14,7 +14,6 @@ class Tree{
 			traverse(head.left);
 			System.out.println(head.data);
 			traverse(head.right);
-			
 		}
 		
 	}
